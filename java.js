@@ -115,6 +115,8 @@ let arrleft=document.querySelector('.arr-left');
 let arrright=document.querySelector('.arr-right');
 let reviewdiv=document.querySelector('.review-div');
 
+let barlist=document.querySelectorAll('.sec-one ul li');
+
 
 bar.addEventListener("click",()=>{
     bar.style.display="none";
@@ -223,6 +225,7 @@ function showItem(categorizedArray){
 window.addEventListener("load", () => {
     let filteredArray = Itemsarray.filter(child => child.category === "HOT");
     showItem(filteredArray);
+   
 });
 
 
@@ -287,4 +290,32 @@ reviewdiv.addEventListener("touchend", () => {
     isDown = false;
 });
 
+
+barlist.forEach((ele)=>{
+
+    ele.addEventListener("click",()=>{
+        
+        barlist.forEach((element)=>{
+            element.classList.remove('styleback');
+        })
+
+        ele.classList.add('styleback');
+
+        
+
+
+
+
+
+        
+
+       
+        
+       
+})
+
+})
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////// */
 

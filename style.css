@@ -43,23 +43,42 @@ padding: 1em 7em;
     list-style: none;
 }
 
+
+.sec-one ul li{
+    padding:7px;
+    cursor: pointer;
+}
+
+.sec-one ul li:hover{
+    background-color:#224F34 ;
+    border-radius: 5px;
+
+
+}
+
 .sec-one ul li a{
     text-decoration: none;
     color:#224F34;
     font-size:17px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    padding:7px;
-    cursor: pointer;
 }
 
-.sec-one ul li a:hover{
+.sec-one ul li:hover a{
+    color: white;
+    }
+
+
+.sec-one .styleback{
     color: white;
     background-color:#224F34 ;
     border-radius: 5px;
-
-
 }
+.sec-one .styleback a{
+    color: white;
+    
+}
+
 
 
 .bag-button{
@@ -174,11 +193,10 @@ padding: 1em 7em;
         top:0;
         right:0;
         gap:3rem;
+        z-index: 5;
       
         
-        
-
-    }
+     }
  
     .cancel-div{
         width: 100%;
@@ -186,7 +204,7 @@ padding: 1em 7em;
         align-items: flex-end;
         justify-content: flex-end;
         padding-right:3em;
-        padding-top:1em;
+        
     }
 
     .cancel{
@@ -202,35 +220,38 @@ padding: 1em 7em;
         width: 100%;
         }
 
-        .sidebar ul li a{
-            color:#224F34;
-            font-size:25px;
-         }
+       
 
     .sidebar ul li {
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        font-size:17px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        padding:7px;
+         padding:7px;
         cursor: pointer;
         width:99%;
+       
         
         
+    }
+
+    .sidebar ul li a{
+        font-size:25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color:#224F34;
     }
     .sidebar ul li:hover{
           background-color:#224F34;
-          color:white;
+         
     }
+
+    .sidebar ul li:hover a{
+       color: white;
+       
+  }
     
-    .sidebar ul li a:hover {
-       color:white;
-        background-color: transparent;
-        border-radius: 0;
-    }
+    
     
 
 
@@ -1778,4 +1799,16 @@ border-radius: 2px;
 .review-div.active {
     cursor: pointer;
     user-select: none;
+}
+
+.shopDiv{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    flex-wrap: wrap;
+    margin-top:2rem;
+    width:90%;
+    gap:2rem;
+   
+    
 }
