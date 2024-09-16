@@ -131,7 +131,7 @@ cancel.addEventListener("click",()=>{
 
 
 function checkScreenWidth() {
-    if (window.innerWidth > 860) {
+    if (window.innerWidth >=1123) {
         bar.style.display = "none";
         sidebar.style.display = "none";
     } else{
