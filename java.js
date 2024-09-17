@@ -12,7 +12,7 @@ let Itemsarray=[
     {
      id:1,
      category:"HOT",
-     image:'./images/sec4Girl1.png',
+     image:'./images/sec4Girl1.webp',
      name:'Spread Collar Shirt',
      price:'$48.99',
      number:'5.0'
@@ -21,7 +21,7 @@ let Itemsarray=[
  {
     id:2,
     category:"HOT",
-    image:'./images/sec4Girl7.png',
+    image:'./images/sec4Girl7.webp',
     name:'White Solid Formal Shirt',
     price:'$39.00',
     number:'4.9'
@@ -30,7 +30,7 @@ let Itemsarray=[
 {
     id:3,
     category:"HOT",
-    image:'./images/sec4Girl3.png',
+    image:'./images/sec4Girl3.webp',
     name:'Shine On Me Blouse',
     price:'$42.99',
     number:'4.8'
@@ -39,7 +39,7 @@ let Itemsarray=[
 {
     id:4,
     category:"HOT",
-    image:'./images/sec4Girl4.png',
+    image:'./images/sec4Girl4.webp',
     name:'Gray Solid Padded Jacket',
     price:'$32.99',
     number:'4.7'
@@ -48,7 +48,7 @@ let Itemsarray=[
 {
     id:5,
     category:"HOT",
-    image:'./images/sec4Girl5.png',
+    image:'./images/sec4Girl5.webp',
     name:'Printed Loose T-shirt',
     price:'$39.99',
     number:'5.0'
@@ -57,7 +57,7 @@ let Itemsarray=[
 {
     id:6,
     category:"HOT",
-    image:'./images/sec4Girl6.png',
+    image:'./images/sec4Girl6.webp',
     name:'Summer Wind Crop Shirt',
     price:'$39.95',
     number:'4.7'
@@ -66,7 +66,7 @@ let Itemsarray=[
 {
     id:7,
     category:"HOT",
-    image:'./images/sec4Girl7.png',
+    image:'./images/sec4Girl7.webp',
     name:'Tailored Jacket',
     price:'$46.00',
     number:'4.9'
@@ -75,7 +75,7 @@ let Itemsarray=[
 {
     id:8,
     category:"HOT",
-    image:'./images/sec4Girl8.png',
+    image:'./images/sec4Girl8.webp',
     name:'Solid Round Neck T-shirt',
     price:'$36.00',
     number:'5.0'

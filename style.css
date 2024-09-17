@@ -8,16 +8,16 @@
 }
 
 html, body {
-    height: 100%;    /* Ensures the body takes the full height of the screen */
+    height: 100%;   
     margin: 0;
     padding: 0;
-    width: 100%;     /* Ensures the body takes the full width of the screen */
+    width: 100%;   
 }
 
 
 body{
-    /* width:100%;*/
-    max-width:1500px; 
+    width:100%;
+    /* max-width:1500px;  */
     margin: 0 auto; 
 }
 
