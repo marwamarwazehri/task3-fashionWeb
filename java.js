@@ -131,7 +131,7 @@ cancel.addEventListener("click",()=>{
 
 
 function checkScreenWidth() {
-    if (window.innerWidth >=1123) {
+    if (window.innerWidth >1020) {
         bar.style.display = "none";
         sidebar.style.display = "none";
     } else{
@@ -173,10 +173,31 @@ function showItem(categorizedArray){
         let itemcon=document.createElement('div');
         itemcon.classList.add('item-con');
 
+        let imagediv=document.createElement('div')
+        imagediv.classList.add('imagediv');
+        
         let imageG=document.createElement('img');
         imageG.src=item.image;
-        imageG.classList.add('imageSize');
-        itemcon.appendChild(imageG);
+        imageG.classList.add('imageSize','lazy-image');
+        imageG.setAttribute('loading', 'lazy');
+        imagediv.appendChild(imageG);
+
+        let loadingicon = document.createElement('i');
+        loadingicon.classList.add('fa-solid', 'fa-spinner', 'loadicon');
+        imagediv.appendChild(loadingicon);
+
+
+        itemcon.appendChild(imagediv);
+
+        imageG.addEventListener('load', () => {
+            loadingicon.style.display = 'none'; 
+            imageG.style.visibility = 'visible'; 
+        });
+
+        imageG.addEventListener('error', () => {
+            console.log('Failed to load image');
+            loadingicon.style.display = 'none';
+        });
 
 
         let itemcontext=document.createElement('div');
@@ -318,4 +339,5 @@ barlist.forEach((ele)=>{
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////// */
+
 
