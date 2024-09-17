@@ -114,7 +114,6 @@ let Itemsarray=[
 let arrleft=document.querySelector('.arr-left');
 let arrright=document.querySelector('.arr-right');
 let reviewdiv=document.querySelector('.review-div');
-
 let barlist=document.querySelectorAll('.sec-one ul li');
 
 
@@ -341,3 +340,36 @@ barlist.forEach((ele)=>{
 /*//////////////////////////////////////////////////////////////////////////////////////////// */
 
 
+
+let targetDate = new Date("2024-12-31T23:59:59").getTime();
+console.log("Target Date:", targetDate); 
+
+function updateCountdown() {
+    console.log("Updating countdown...");
+    let now = new Date().getTime();
+    let timeRemaining = targetDate - now;
+
+    
+    let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+
+   
+    document.getElementById('days').innerHTML = days < 10 ? '0' + days : days;
+    document.getElementById('hours').innerHTML = hours < 10 ? '0' + hours : hours;
+    document.getElementById('minutes').innerHTML = minutes < 10 ? '0' + minutes : minutes;
+
+    
+    if (timeRemaining < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('days').innerHTML = "00";
+        document.getElementById('hours').innerHTML = "00";
+        document.getElementById('minutes').innerHTML = "00";
+    }
+}
+
+
+let countdownInterval = setInterval(updateCountdown, 1000);
+
+
+updateCountdown();
